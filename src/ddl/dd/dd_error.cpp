@@ -27,7 +27,7 @@ std::vector<std::string> transformProblemList(const std::vector<Problem>& proble
     for (auto& ref: problems) {
         res.push_back(std::string(ref.item_name + ": " + ref.problem_message));
     }
-    return std::move(res);
+    return res;
 }
 
 std::string Error::joinArgs(const std::vector<std::string>& oo_operation_args)

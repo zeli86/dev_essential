@@ -63,7 +63,7 @@ dd::DataDefinition DDFile::fromXMLFile(const std::string& xml_filepath, bool str
                         created_dd.getValidationProtocol());
     }
 
-    return std::move(created_dd);
+    return created_dd;
 }
 
 void DDFile::toXMLFile(const dd::DataDefinition& ddl_to_write, const std::string& xml_filepath)

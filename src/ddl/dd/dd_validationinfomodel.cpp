@@ -77,7 +77,7 @@ std::vector<std::string> removeInMapTo(const std::string& to,
         std::swap(it->second, result);
         the_map.erase(it);
     }
-    return std::move(result);
+    return result;
 }
 
 void renameInMapFrom(const std::string& from_old,
